@@ -30,10 +30,6 @@
 .name{
   margin-top:30%;
 }
-.project-image>img{
-  position:absolute;
-  width:100%;
-}
 #about{
   padding: 19%;
   font-size: 24px;
@@ -48,7 +44,7 @@
   margin-top: 20%;
 }
 header>ul{
-  background-color: rgba(0,70,0,0.7);
+  background-color: rgba(0,150,0,0.7);
   position: fixed;
   right: 0;
 }
@@ -67,30 +63,35 @@ header>ul a:active{
 }
 #contact p{
   margin:10px;
+  color: rgba(230,230,230,0.9);
 }
-#contact>button>a:hover{
+#contact a:hover{
   text-decoration: none;
-  color: green;
+  color: black;
 }
  #contact{
-   background-color: rgba(0,70,0,0.7);
+   /* background-image: url("/images/pro.jpg"); */
+   background-color: rgba(0,51,102,0.999);
    padding: 20%;
-   font-size: 30px;
+   font-size: 22px;
    text-align: center;
  }
-
- #contact p, #contact a{
-   color: rgba(0,0,200,0.9);
+ #contact a{
+   color: rgba(0,190,0,1);
  }
 .project{
-  width:30%;
-  height:20vw;
+  width:360px;
+  height:300px;
   float:left;
   margin:1%;
 }
-.w3-modal{
+.project-image>img{
   width:100%;
 }
+/* .w3-modal{
+  width:100%;
+  padding-bottom: 20px;
+} */
 .w3-button{
-  margin-top: 200px;
+  margin: 20px;
 }

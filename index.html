@@ -16,36 +16,36 @@
 </head>
 
 <body>
-  <div id="mobile-menu-open" class="shadow-large">
+  <!-- <div class="mobile-menu-open" class="shadow-large">
       <i class="fa fa-bars" aria-hidden="true"></i>
-  </div>
+  </div> -->
   <!-- End #mobile-menu-toggle -->
   <header>
-      <div id="mobile-menu-close">
+      <!-- <div class="mobile-menu-close">
           <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-      </div>
-      <ul id="menu" class="shadow">
+      </div> -->
+      <ul class="menu" class="shadow">
         <li>
             <a href="#lead">Home</a>
         </li>
-          <li>
-              <a href="#about">About</a>
-          </li>
-          <li>
-              <a href="#skills">Skills</a>
-          </li>
-          <!-- <li>
-              <a href="#experience">Experience</a>
-          </li> -->
-          <!-- <li>
-              <a href="#education">Education</a>
-          </li> -->
-          <li>
-              <a href="#projects">Projects</a>
-          </li>
-          <li>
-              <a href="#contact">Contact</a>
-          </li>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#skills">Skills</a>
+        </li>
+        <!-- <li>
+            <a href="#experience">Experience</a>
+        </li> -->
+        <!-- <li>
+            <a href="#education">Education</a>
+        </li> -->
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
       </ul>
   </header>
   <!-- End header -->
@@ -57,8 +57,13 @@
             <div class="row">
               <div class="col-md-2"></div>
               <div class="name col-md-8">
-                <h1 class='text-center'>Assumpta Uwanyirijuru</h1><hr style="width:50%;">
-                <h2 class='text-center'>Full Stack Software Developer</h2>
+                <h1 class='text-center'>Assumpta Uwanyirijuru</h1>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"><hr></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-12">
+                  <h2 class='text-center'>Full Stack Software Developer</h2>
+                </div>
                 <!-- <a href="#" class="btn-rounded-white">Download Resume</a> -->
               </div>
               <div class="col-md-2"></div>
@@ -82,16 +87,26 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-2"></div>
+                <!-- <div class="col-md-2"></div> -->
                 <div class="col-md-8">
                   <h2 class="heading">About Me</h2>
                   <div class="text-center">
-                    <p>I'm a full stack Developer based in Kigali, Rwanda.</p><hr style="width:30%;">
-                    <p>Always Striving to be a Better Version of Me.</p><hr style="width:25%;">
-                    <p>Curious, Attentive and Determined.</p>
+                    <p>I'm a full stack Developer based in Kigali, Rwanda.</p>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8"><hr></div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-12">
+                      <p>Always Striving to be a Better Version of Me.</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6"><hr></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-12">
+                      <p>Curious, Attentive and Determined.</p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-2"></div>
+                <!-- <div class="col-md-2"></div> -->
             </div>
         </div>
     </div>
@@ -174,12 +189,14 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-              <div class="w3-container">
-                <div class="project shadow-large">
+              <div class="project shadow-large">
+                <div class="w3-container">
                     <div class="project-image">
-                        <img class="col-md-6"src="images/Screenshot from 2019-04-30 14-02-51.png"/>
+                      <h3>Instagram</h3>
+                        <img src="images/Screenshot from 2019-04-30 14-02-51.png"/>
+                        <button onclick="document.getElementById('info1').style.display='block'" class="w3-button w3-green">View Details</button>
                     </div>
-                    <button onclick="document.getElementById('info1').style.display='block'" class="w3-button w3-black">View Details</button>
+
                     <div id="info1" class="w3-modal">
                       <div class="w3-modal-content">
                         <div class="w3-container">
@@ -192,9 +209,9 @@
                           <h4>Technologies</h4>
                           <p>Python</p>
                           <p>Django</p>
-                          <p>PostgreSQL</p>
-                          <a href="https://insta1010.herokuapp.com/">View Project</a><hr>
-                          <a href="">GITHUB LINK</a>
+                          <p>PostgreSQL</p><hr>
+                          <a type="button" href="https://insta1010.herokuapp.com/">View Project</a><hr>
+                          <a type="button" href="https://github.com/Juru-10/instagram.git">On GitHub</a><hr>
                         </div>
                       </div>
                     </div>
@@ -204,9 +221,10 @@
                 <div class="project shadow-large">
                   <div class="w3-container">
                     <div class="project-image">
-                        <img class="col-md-6" src="images/Screenshot from 2019-04-30 14-05-38.png" />
+                      <h3>Gallery</h3>
+                        <img src="images/Screenshot from 2019-04-30 14-05-38.png" />
+                        <button onclick="document.getElementById('info2').style.display='block'" class="w3-button w3-green">View Details</button>
                     </div>
-                    <button onclick="document.getElementById('info2').style.display='block'" class="w3-button w3-black">View Details</button>
                     <div id="info2" class="w3-modal">
                       <div class="w3-modal-content">
                         <div class="w3-container">
@@ -219,9 +237,9 @@
                           <h4>Technologies</h4>
                           <p>Python</p>
                           <p>Django</p>
-                          <p>PostgreSQL</p>
-                          <a href="https://gallery1010.herokuapp.com/">View Project</a><hr>
-                          <a href="">GITHUB LINK</a>
+                          <p>PostgreSQL</p><hr>
+                          <a type="button" href="https://gallery1010.herokuapp.com/">View Project</a><hr>
+                          <a type="button" href="https://github.com/Juru-10/gallery">On GitHub</a><hr>
                         </div>
                       </div>
                     </div>
@@ -231,9 +249,10 @@
                 <div class="project shadow-large">
                   <div class="w3-container">
                     <div class="project-image">
-                        <img class="col-md-6" src="images/Screenshot from 2019-04-30 14-06-35.png" />
+                      <h3>GHUsers</h3>
+                        <img src="images/Screenshot from 2019-04-30 14-06-35.png" />
+                        <button onclick="document.getElementById('info3').style.display='block'" class="w3-button w3-green">View Details</button>
                     </div>
-                    <button onclick="document.getElementById('info3').style.display='block'" class="w3-button w3-black">View Details</button>
                     <div id="info3" class="w3-modal">
                       <div class="w3-modal-content">
                         <div class="w3-container">
@@ -245,9 +264,9 @@
                           </p>
                           <h4>Technologies</h4>
                           <p>Typescript</p>
-                          <p>AngularJS</p>
-                          <a href="https://juru-10.github.io/GHUsers/users">View Project</a><hr>
-                          <a href="">GITHUB LINK</a>
+                          <p>AngularJS</p><hr>
+                          <a type="button" href="https://juru-10.github.io/GHUsers/users">View Project</a><hr>
+                          <a type="button" href="https://github.com/Juru-10/GHUsers">On GitHub</a><hr>
                         </div>
                       </div>
                     </div>
@@ -257,9 +276,10 @@
                 <div class="project shadow-large">
                   <div class="w3-container">
                     <div class="project-image">
-                        <img class="col-md-6" src="images/Screenshot from 2019-04-30 14-09-13.png" />
+                      <h3>Bank Account</h3>
+                        <img src="images/Screenshot from 2019-04-30 14-09-13.png" />
+                        <button onclick="document.getElementById('info4').style.display='block'" class="w3-button w3-green">View Details</button>
                     </div>
-                    <button onclick="document.getElementById('info4').style.display='block'" class="w3-button w3-black">View Details</button>
                     <div id="info4" class="w3-modal">
                       <div class="w3-modal-content">
                           <div class="w3-container">
@@ -270,9 +290,9 @@
                             </p>
                             <h4>Technologies</h4>
                             <p>JavaScript</p>
-                            <p>JQuery</p>
-                            <a href="https://juru-10.github.io/bank/">View Project</a><hr>
-                            <a href="">GITHUB LINK</a>
+                            <p>JQuery</p><hr>
+                            <a type="button" href="https://juru-10.github.io/bank/">View Project</a><hr>
+                            <a type="button" href="https://github.com/Juru-10/bank">On GitHub</a><hr>
                           </div>
                       </div>
                     </div>
@@ -282,9 +302,10 @@
                 <div class="project shadow-large">
                   <div class="w3-container">
                     <div class="project-image">
-                        <img class="col-md-6" src="images/Screenshot from 2019-04-30 14-10-05.png" />
+                      <h3>Quotes</h3>
+                        <img src="images/Screenshot from 2019-04-30 14-10-05.png" />
+                        <button onclick="document.getElementById('info5').style.display='block'" class="w3-button w3-green">View Details</button>
                     </div>
-                    <button onclick="document.getElementById('info5').style.display='block'" class="w3-button w3-black">View Details</button>
                     <div id="info5" class="w3-modal">
                       <div class="w3-modal-content">
                         <div class="w3-container">
@@ -296,9 +317,9 @@
                           <h4>Technologies</h4>
                           <p>Typescript</p>
                           <p>AngularJS</p>
-                          <p>NodeJS</p>
-                          <a href="https://juru-10.github.io/Quotes/">View Project</a><hr>
-                          <a href="">GITHUB LINK</a>
+                          <p>NodeJS</p><hr>
+                          <a type="button" href="https://juru-10.github.io/Quotes/">View Project</a><hr>
+                          <a type="button" href="https://github.com/Juru-10/Quotes">On GitHub</a><hr>
                         </div>
                       </div>
                     </div>
@@ -311,19 +332,21 @@
     <!-- End #projects -->
 
     <div id="contact">
-        <h2>Contact</h2><hr style="width:50px;">
-        <p>Email : jurassu10@gmail.com</p>
-        <button><a href="www.linkedin.com/in/a-uwanyirijuru">LinkedIn</a></button>
-        <button><a href="https://github.com/Juru-10">GitHub</a></button>
-        <!-- <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div> -->
-        <!-- End #contact-form -->
+        <div class="">
+          <h2>Contact</h2>
+          <div class="col-md-5"></div>
+          <div class="col-md-2">
+            <hr style="width:50px;margin-left:30px;margin-top:-15px;">
+          </div>
+          <div class="col-md-5"></div>
+          <div class="col-md-12">
+            <p>Email:</p><p>jurassu10@gmail.com</p>
+          </div>
+          <div class="col-md-12">
+            <button><a href="www.linkedin.com/in/a-uwanyirijuru">LinkedIn</a></button>
+            <button><a href="https://github.com/Juru-10">GitHub</a></button>
+          </div>
+        </div>
     </div>
     <!-- End #contact -->
 
